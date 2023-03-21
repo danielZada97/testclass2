@@ -68,7 +68,7 @@ public class TestThreadCheckArray {
 					System.out.print("0    ");	
 			}
 			endtime=System.currentTimeMillis();
-			long total=start-endtime;
+			long total=endtime-start;
 			System.out.println("total running time:"+total+"\n");
 		}
 	}
