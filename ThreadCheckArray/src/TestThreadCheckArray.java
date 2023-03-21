@@ -4,6 +4,8 @@ public class TestThreadCheckArray {
 	public static void main(String[] args) {
 		try (Scanner input = new Scanner(System.in)) {
 			Thread thread1, thread2;
+			long start = System.currentTimeMillis();
+			long endtime;
 			System.out.println("Enter array size");
 			int num  = input.nextInt();
 			int [] array = new int[num];
@@ -65,6 +67,9 @@ public class TestThreadCheckArray {
 				else
 					System.out.print("0    ");	
 			}
+			endtime=System.currentTimeMillis();
+			long total=start-endtime;
+			System.out.println("total running time:"+total+"\n");
 		}
 	}
 

@@ -25,7 +25,10 @@ public class SharedData
 	{
 		return array;
 	}
-
+/**
+ * returns the b value
+ * @return b
+ */
 	public int getB() 
 	{
 		return b;
@@ -38,6 +41,9 @@ public class SharedData
 
 	public void setFlag(boolean flag) {
 		this.flag = flag;
+		
 	}
+	
+
 
 }
